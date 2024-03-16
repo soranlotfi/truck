@@ -15,6 +15,7 @@ const MTypography = forwardRef<HTMLParagraphElement , IMTypography>(
             letterSpacing,
             lineHeight,
             transform,
+            banner,
             color
         },
             ref
@@ -31,7 +32,7 @@ const MTypography = forwardRef<HTMLParagraphElement , IMTypography>(
                 letterSpacing={letterSpacing}
                 lineHeight={lineHeight}
                 textTransform={transform}
-                costumstats={{}}
+                costumstats={{banner}}
             >
                 {children}
             </MTypographiRoot>

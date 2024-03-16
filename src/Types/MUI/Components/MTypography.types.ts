@@ -12,6 +12,7 @@ export interface IMTypography {
     transform?: CSS.Property.TextTransform,
     textAlign?: CSS.Property.TextAlign,
     sx?: SxProps,
+    banner?:boolean
     children?: React.ReactNode
 }
 

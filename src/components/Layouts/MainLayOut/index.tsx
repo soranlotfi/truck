@@ -10,7 +10,6 @@ interface layOut{
     children : React.ReactNode
 }
 const MainLayOut :React.FC<layOut>= ({children})=>{
-    console.log(truckLogo)
     return(
           <Grid item container>
               <Grid item container justifyContent={"center"} alignItems={"center"} xs={12} p={"1rem"} position={"absolute"}>
@@ -20,7 +19,7 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
                       justifyContent={"center"}
                       alignItems={"center"}
                       borderRadius={"2.5rem"}
-                      border={"1px solid red"}
+                      border={"1px solid #0979DF"}
                       p={"0 1rem"}
                       sx={{background :"rgba(217,203,203,0.1)"}}
                   >

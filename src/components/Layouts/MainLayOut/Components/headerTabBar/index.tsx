@@ -6,34 +6,35 @@ import {setTabBar, useAppMuiController} from "@/Context/MUI";
 import {useRouter} from "next/router";
 import {fontWeight} from "@mui/system";
 
-const StyledTab = styled(Tab)(()=>{
+const StyledTab = styled(Tab)(() => {
     return {
-        fontWeight: "bold",
-        textTransform:"capitalize",
-        fontSize:"1.2rem",
-       "&.MuiTab-root" : {
-        color: "#3568b1",
-        zIndex: 1,
-        padding: "1rem 1.5rem",
-        borderRadius: "0.8rem",
-    } ,
+        fontWeight: "normal",
+        textTransform: "capitalize",
+        fontSize: "1.2rem",
+        fontFamily: "vazir",
+        "&.MuiTab-root": {
+            color: "white",
+            zIndex: 1,
+            padding: "1rem 1.5rem",
+            borderRadius: "0.8rem",
+        },
 
-        "&.Mui-selected " :{
-        color: "#cf9b00 !important",
-    }
+        "&.Mui-selected ": {
+            color: "#0979DF !important",
+            fontWeight: "bold"
+        }
     }
 })
 
-const StyledTabs = styled(Tabs)(()=>{
+const StyledTabs = styled(Tabs)(() => {
     return {
         borderRadius: "0.8rem",
-        "&.MuiTabs-indicator" : {
+        "&.MuiTabs-indicator": {
             backgroundColor: "blue !important",
-             height: "10rem",
-        } ,
+            height: "10rem",
+        },
     }
 })
-
 
 
 export default function HeaderTabBar() {
@@ -52,11 +53,13 @@ export default function HeaderTabBar() {
             variant={"scrollable"}
         >
             {navList
-                .map((navItem , index:number) => (
+                .map((navItem, index: number) => (
                     <StyledTab
                         key={index}
                         label={navItem.text}
-                        onClick={() => Router.replace(navItem.path)}
+                        /*
+                                                onClick={() => Router.replace(navItem.path)}
+                        */
                     />
                 ))}
         </StyledTabs>
