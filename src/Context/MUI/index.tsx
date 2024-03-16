@@ -13,17 +13,20 @@ MaterialUi.displayName = "MaterialUi"
 
 interface ActionType{
     type:string
-    value:string
+    value:any
 }
 
 interface StateType{
-    mode : string
-    themeValue : number
+    mode ?: string
+    tabbarValue ?: number
 }
 function reducer(state:StateType , action: ActionType) {
     switch (action.type) {
         case "MODE" : {
             return {...state, mode: action.value}
+        }
+        case "TAB_BAR" : {
+            return {...state, tabbarValue: action.value}
         }
 
         default: {
@@ -36,7 +39,7 @@ function reducer(state:StateType , action: ActionType) {
 function AppMuiProvider({children} : {children : React.ReactNode}) {
     const initialState : StateType = {
         mode: "",
-        themeValue:0,
+        tabbarValue:0,
     }
 
     const [controller, dispatch] = useReducer<React.Reducer<StateType, ActionType>>(reducer, initialState);
@@ -54,8 +57,10 @@ function useAppMuiController() {
 }
 
 const setMode = (dispatch: React.Dispatch<ActionType>, value: string) => dispatch({ type: "MODE", value });
+const setTabBar = (dispatch: React.Dispatch<ActionType>, value: number) => dispatch({ type: "TAB_BAR", value });
 export {
     AppMuiProvider,
     useAppMuiController,
-    setMode
+    setMode,
+    setTabBar
 }

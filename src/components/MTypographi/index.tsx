@@ -23,7 +23,7 @@ const MTypography = forwardRef<HTMLParagraphElement , IMTypography>(
             <MTypographiRoot
                 fontSize={fontSize}
                 fontWeight={fontWeight}
-                fontFamily={fontFamily}
+                fontFamily={"Vazir"}
                 sx={sx}
                 ref={ref}
                 color={color}
