@@ -11,7 +11,7 @@ const colors : PaletteOptions ={
             main: '#dc004e',
             light: '#f06292',
             dark: '#c51162',
-            contrastText: '#fff',
+            contrastText: '#F8F8F8',
         },
         error: {
             main: '#AE2434',

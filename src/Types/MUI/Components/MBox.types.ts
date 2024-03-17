@@ -2,6 +2,8 @@ import {SxProps, Theme} from "@mui/material";
 import * as CSS from "csstype";
 
 export interface IMBox {
+    backUrl?:string,
+    service?:boolean,
     bgColor?: CSS.Property.BackgroundColor
     borderRadius?:CSS.Property.BorderRadius;
     width?: CSS.Property.Width ;

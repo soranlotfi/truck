@@ -18,6 +18,8 @@ const MBox = forwardRef<HTMLDivElement , IMBox>(
          maxWidth,
          m,
          p,
+         service,
+         backUrl,
         ...rest
     } , ref)=>(
         <MBoxRoot
@@ -32,10 +34,12 @@ const MBox = forwardRef<HTMLDivElement , IMBox>(
             m={m}
             p={p}
             costumstats={{
+                backUrl,
                 position,
                 backgroundSize,
                 borderRadius,
                 bgColor,
+                service,
                 ...rest
             }}
             ref={ref}
