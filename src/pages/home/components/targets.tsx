@@ -4,7 +4,7 @@ import {homedata} from "@/pages/home/data";
 import MTypography from "@/components/MTypographi";
 import React from "react";
 
-const Target_advanteges = ()=>{
+const Targets = ()=>{
     return(
         <Grid item container  p={"3rem 0"}>
             <MBox width={"100%"} height={"70vh"}
@@ -30,4 +30,4 @@ const Target_advanteges = ()=>{
     )
 }
 
-export default Target_advanteges
+export default Targets
