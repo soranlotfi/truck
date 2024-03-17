@@ -12,6 +12,7 @@ export interface IMButton {
     textAlign?: CSS.Property.TextAlign,
     padding?: CSS.Property.Padding,
     margin?: CSS.Property.Margin,
+    fontWeight?:CSS.Property.FontWeight
     sx?:SxProps,
     submit?: boolean,
     children?: React.ReactNode,

@@ -5,6 +5,7 @@ import MButtonRoot from "@/components/MButton/MButtonRoot";
 const MButton = forwardRef<HTMLButtonElement,IMButton>(
     (
         {
+            fontWeight,
             type,
             color,
             bgcolor,
@@ -29,6 +30,7 @@ const MButton = forwardRef<HTMLButtonElement,IMButton>(
                 onClick={onClick}
                 type={type}
                 costumstats={{
+                    fontWeight,
                     fontSize,
                     color,
                     textAlign,

@@ -40,7 +40,6 @@ const StyledTabs = styled(Tabs)(() => {
 export default function HeaderTabBar() {
     const Router = useRouter()
     const [values, dispatch] = useAppMuiController();
-    console.log(values)
     const {tabbarValue: value} = values.state;
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setTabBar(dispatch, newValue);

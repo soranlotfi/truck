@@ -2,7 +2,7 @@ import {PaletteOptions} from "@mui/material";
 
 const colors : PaletteOptions ={
         primary: {
-            main: '#1976d2',
+            main: '#0979DF',
             light: '#42a5f5',
             dark: '#1565c0',
             contrastText: '#fff',
@@ -14,7 +14,7 @@ const colors : PaletteOptions ={
             contrastText: '#fff',
         },
         error: {
-            main: '#f44336',
+            main: '#AE2434',
             light: '#ff7961',
             dark: '#ba000d',
             contrastText: '#fff',
