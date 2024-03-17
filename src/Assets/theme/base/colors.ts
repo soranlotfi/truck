@@ -23,7 +23,7 @@ const colors : PaletteOptions ={
             main: '#ff9800',
             light: '#ffb74d',
             dark: '#ef6c00',
-            contrastText: '#000',
+            contrastText: '#272727',
         },
         info: {
             main: '#2196f3',

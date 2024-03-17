@@ -20,7 +20,6 @@ const AppHomePage = () => {
             <WhyTruck/>
             <Targets/>
             <Advantages/>
-
         </PageLayOut>
     )
 }

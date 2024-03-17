@@ -11,12 +11,12 @@ const StyledTab = styled(Tab)(() => {
         fontWeight: "normal",
         textTransform: "capitalize",
         fontSize: "1.2rem",
-        fontFamily: "vazir",
+        fontFamily: "Vazir !important",
         "&.MuiTab-root": {
-            color: "white",
+            color: "white !important",
             zIndex: 1,
-            padding: "1rem 1.5rem",
-            borderRadius: "0.8rem",
+            padding: "1rem 1.5rem !important",
+            borderRadius: "0.8rem !important",
         },
 
         "&.Mui-selected ": {
@@ -31,7 +31,7 @@ const StyledTabs = styled(Tabs)(() => {
         borderRadius: "0.8rem",
         "&.MuiTabs-indicator": {
             backgroundColor: "blue !important",
-            height: "10rem",
+            height: "10rem !important",
         },
     }
 })

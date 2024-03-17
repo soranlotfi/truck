@@ -1,16 +1,17 @@
 import {Grid} from "@mui/material";
 import MBox from "@/components/MBox";
-import {homedata} from "@/pages/home/data";
+import {homedata} from "../../../StaticDatas/homepageData";
 import MTypography from "@/components/MTypographi";
 import React from "react";
 
 const Targets = ()=>{
     return(
         <Grid item container  p={"3rem 0"}>
-            <MBox width={"100%"} height={"70vh"}
+            <MBox width={"100%"} height={"80vh"}
                   sx={{background:`url(${homedata.truckservices.service_target.image})`,
                       backgroundSize:"cover" ,
-                      backgroundPosition:"center"}}>
+                      backgroundPosition:"center",
+            }}>
                 <Grid item container height={"100%"} justifyContent={"center"} alignItems={"end"}>
                     <Grid item container xs={11} height={"50%"} alignItems={"cenetr"}>
                         <Grid item xs={12}  container alignItems={"center"}>

@@ -1,5 +1,5 @@
 import {Grid} from "@mui/material";
-import {homedata} from "@/pages/home/data";
+import {homedata} from "../../../StaticDatas/homepageData";
 import MTypography from "@/components/MTypographi";
 import React from "react";
 

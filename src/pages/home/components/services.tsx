@@ -1,6 +1,6 @@
 import {Box, Grid, styled} from "@mui/material";
 import MTypography from "@/components/MTypographi";
-import {homedata} from "@/pages/home/data";
+import {homedata} from "../../../StaticDatas/homepageData";
 import MDivider from "@/components/MDivider";
 import MBox from "@/components/MBox";
 import React from "react";
@@ -32,7 +32,7 @@ const Services = ()=>{
                     <MTypography fontSize={"2rem"} fontWeight={"bold"}>{homedata.truckservices.title}</MTypography>
                 </Grid>
                 <Grid item xs={12} textAlign={"center"} container justifyContent={"center"}>
-                    <MDivider bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"30%"}/>
+                    <MDivider height={".3rem"} bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"30%"}/>
                 </Grid>
             </Grid>
             <Grid item container p={"3rem 0"}>

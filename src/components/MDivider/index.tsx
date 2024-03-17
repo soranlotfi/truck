@@ -8,15 +8,16 @@ interface Divider{
     orientation :"horizontal" | "vertical" | undefined
     flexItem:boolean
     width:string
+    height : string
 }
-const Mdivider : React.FC<Divider> = ({bgcolor ,width , varient , orientation,flexItem})=>{
+const Mdivider : React.FC<Divider> = ({bgcolor,height ,width , varient , orientation,flexItem})=>{
     const theme = useTheme()
     const themeBgColor = bgcolor?.split('.').reduce((obj:any, key:string) => obj[key], theme.palette);
     return(
         <Divider
             orientation={orientation}
             variant={varient}
-            sx={{backgroundColor:themeBgColor , height : ".3rem" , borderRadius:"20rem" , width:width}}
+            sx={{backgroundColor:themeBgColor , height : height , borderRadius:"20rem" , width:width}}
             flexItem={flexItem}
         />
     )
