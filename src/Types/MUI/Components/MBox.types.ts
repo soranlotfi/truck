@@ -2,6 +2,7 @@ import {SxProps, Theme} from "@mui/material";
 import * as CSS from "csstype";
 
 export interface IMBox {
+    advantage?:boolean,
     backUrl?:string,
     service?:boolean,
     bgColor?: CSS.Property.BackgroundColor

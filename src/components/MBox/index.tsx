@@ -4,6 +4,7 @@ import MBoxRoot from "@/components/MBox/MBoxRoot";
 
 const MBox = forwardRef<HTMLDivElement , IMBox>(
     ({
+        advantage,
         bgColor,
         height,
         width,
@@ -34,6 +35,7 @@ const MBox = forwardRef<HTMLDivElement , IMBox>(
             m={m}
             p={p}
             costumstats={{
+                advantage,
                 backUrl,
                 position,
                 backgroundSize,

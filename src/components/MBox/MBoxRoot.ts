@@ -11,6 +11,7 @@ const MBoxRoot = styled(Box)<IMboxRoot>(({costumstats , theme})=>{
         position,
         backgroundSize,
         backUrl,
+        advantage
     } = costumstats
     function serviceStyle(){
         return{
@@ -25,6 +26,16 @@ const MBoxRoot = styled(Box)<IMboxRoot>(({costumstats , theme})=>{
             transformStyle:"preserve-3d"
 */
         }
+
+    }
+
+    function advantageCard(){
+        return{
+            boxShadow: "-1px 2px 15px 0px rgba(9,121,223,1)", // Apply a shadow
+            borderRadius:".8rem",
+            border:"1px solid #0979DF",
+            backgroundColor:"#F8F8F8"
+        }
     }
     return{
         width,
@@ -35,6 +46,7 @@ const MBoxRoot = styled(Box)<IMboxRoot>(({costumstats , theme})=>{
         backgroundSize,
         backgroundImage:backUrl,
         ...(service && serviceStyle()),
+        ...(advantage && advantageCard()),
 
     }
 })
