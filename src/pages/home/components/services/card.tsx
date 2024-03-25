@@ -33,8 +33,8 @@ const Card: React.FC<card> = ({image, title, text, path}) => {
                         {title}
                     </MTypography>
                 </Grid>
-                <Grid item xs={12} p={".5rem .8rem"}>
-                    <MTypography fontSize={"1.4rem"} textAlign={"justify"} >
+                <Grid item xs={12} p={".8rem 1.5rem"}>
+                    <MTypography fontSize={"1.3rem"} textAlign={"justify"} >
                         {text}
                     </MTypography>
                 </Grid>

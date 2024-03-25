@@ -57,36 +57,41 @@ const Index = () => {
                 <Grid item
                       container
                       xs={12}
+                      paddingBottom={"6rem"}
                       sx={{
                           background: `url(${truckservices.background})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                           backgroundRepeat: "no-repeat"
                       }}
-                      height={"80vh"}
                 >
-                    <Grid item container position={"relative"}>
+                    <Grid item container position={"relative"} height={"60vh"}>
                       {/*  cards*/}
                       <Grid item container justifyContent={"space-evenly"} alignItems={"stretch"} position={"absolute"} top={"-10%"} left={0} width={"100%"}>
                           <Grid itm container xs={4} >
                               <Card image={truckservices.driver.image} title={truckservices.driver.title} text={truckservices.driver.text} path={"/drivers"}/>
                           </Grid>
                           <Grid itm container xs={4} >
-                              <Card image={truckservices.owner.image} title={truckservices.owner.title} text={truckservices.owner.text} path={"/drivers"}/>
-                          </Grid>
-                          <Grid item container alignItems={"end"} p={"4rem 0"} justifyContent={"center"}  spacing={4}>
-                              <Grid item xs={3} height={"12vh"}>
-                                  <MButton width={"100%"} height={"100%"} bgcolor={"primary.main"} color={"primary.contrastText"} fontWeight={"bold"} fontSize={"1.2rem"}>
-                                      دانلود نسخه رانندگان
-                                  </MButton>
-                              </Grid>
-                              <Grid item xs={3} height={"12vh"}>
-                                  <MButton width={"100%"} color={"primary.contrastText"} height={"100%"} bgcolor={"error.main"} fontWeight={"bold"} fontSize={"1.2rem"}>
-                                      دانلود نسخه صاحبان بار
-                                  </MButton>
-                              </Grid>
+                              <Card image={truckservices.owner.image} title={truckservices.owner.title} text={truckservices.owner.text} path={"/owners"}/>
                           </Grid>
                       </Grid>
+                    </Grid>
+                    <Grid item container alignItems={"end"} height={"30vh"} justifyContent={"center"}  spacing={4}>
+                        <Grid item xs={12} textAlign={"center"}>
+                            <MTypography fontSize={"1.5rem"} color={"white"}>
+                                جهت استفاده از خدمات اپلیکیشن ما را دانلود کنید.
+                            </MTypography>
+                        </Grid>
+                        <Grid item xs={3} height={"12vh"}>
+                            <MButton width={"100%"} height={"100%"} bgcolor={"primary.main"} color={"primary.contrastText"} fontWeight={"bold"} fontSize={"1.2rem"}>
+                                دانلود نسخه رانندگان
+                            </MButton>
+                        </Grid>
+                        <Grid item xs={3} height={"12vh"}>
+                            <MButton width={"100%"} color={"primary.contrastText"} height={"100%"} bgcolor={"error.main"} fontWeight={"bold"} fontSize={"1.2rem"}>
+                                دانلود نسخه صاحبان بار
+                            </MButton>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>

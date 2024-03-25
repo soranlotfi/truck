@@ -1,5 +1,5 @@
 import {Grid} from "@mui/material";
-import Banner from "@/pages/drivers/components/banner";
+import Banner from "@/pages/drivers/banner/banner";
 import PageLayOut from "@/components/Layouts/PageLayOut";
 import MTypography from "@/components/MTypographi";
 import {homedata} from "@/StaticDatas/homepageData";

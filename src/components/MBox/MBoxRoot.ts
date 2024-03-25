@@ -34,7 +34,8 @@ const MBoxRoot = styled(Box)<IMboxRoot>(({costumstats , theme})=>{
             boxShadow: "-1px 2px 15px 0px rgba(9,121,223,1)", // Apply a shadow
             borderRadius:".8rem",
             border:"1px solid #0979DF",
-            backgroundColor:"#F8F8F8"
+            backgroundColor:"#F8F8F8",
+            padding:"1rem"
         }
     }
     return{

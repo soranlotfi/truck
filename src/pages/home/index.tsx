@@ -18,8 +18,8 @@ const AppHomePage = () => {
             <Welcome/>
             <Services/>
             <WhyTruck/>
-            <Targets/>
             <Advantages/>
+            <Targets/>
         </PageLayOut>
     )
 }

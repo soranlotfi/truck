@@ -22,7 +22,7 @@ const Advantages = ()=>{
             <Grid item container justifyContent={"space-evenly"} columnSpacing={"2rem"} p={"4rem 0"}>
                 {
                     homedata.truckservices.advantageSection.advantageCards.map((card, index) => (
-                        <Grid item container xs={4} key={index}>
+                        <Grid item container xs={3} key={index}>
                             <MBox width={"100%"} height={"100%"} advantage>
                                 <Grid item container height={"100%"} p={"1rem .5rem"} justifyContent={"center"}>
                                     <Grid item container xs={12} alignItems={"center"} justifyContent={"space-between"} paddingBottom={"2rem"}>
@@ -33,7 +33,7 @@ const Advantages = ()=>{
                                             <MTypography fontSize={"1.6rem"} fontWeight={"bold"}>{card.title}</MTypography>
                                         </Grid>
                                     </Grid>
-                                    <Grid item xs={11} textAlign={"justify"}>
+                                    <Grid item xs={11} textAlign={"center"}>
                                         <MTypography fontSize={"1.2rem"}>
                                             {card.text}
                                         </MTypography>

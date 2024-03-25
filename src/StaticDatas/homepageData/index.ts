@@ -27,10 +27,35 @@ const homedata = {
             image : require("@/Assets/images/barowners.png").default.src,
         },
         whyTruck: {
-            title: "چرا پلتفرم آنلاین تراک",
+            title: "چرا پلتفرم  تراک",
             text: "تحت پشتیبانی فناوری‌های نوآورانه و با همکاری یک تیم متخصص، پلتفرم ما یکی از بزرگترین شبکه‌های حمل و نقل و لجستیک در کشور است. با ارائه خدمات حمل و نقل با کیفیتی بالا و کنترلی کامل بر بارها، می تواند با اهداف خود همگام شود و به موفقیت‌های فراوانی دست پیدا کند. با استفاده از این پلتفرم مدرن، صاحبان بار و رانندگان به آسانی و بهره‌وری بالاتری می‌توانند مسائل حمل و نقل را مدیریت کنند و خدماتی بهتر و مطابق با نیازهای خود دریافت کنند.",
-            image : require("@/Assets/images/questionmark.png").default.src,
-
+            truckReasons:[
+                {
+                    subTitle : "خدمات آنلاین همه جانبه",
+                    icon :require("@/Assets/images/icons-logo/6843052_communication_connect_connection_contact_global_icon 1.png").default.src,
+                }, {
+                    subTitle : "مکانیک سیار",
+                    icon :require("@/Assets/images/icons-logo/repair_setting_setup_icon - Copy 1.png").default.src,
+                }, {
+                    subTitle : "آپاراتی سیار",
+                    icon :require("@/Assets/images/icons-logo/6883265_automobile_tire_tires_icon 1.png").default.src,
+                }, {
+                    subTitle : "امنیت",
+                    icon :require("@/Assets/images/icons-logo/9004766_shield_security_protection_secure_icon 1.png").default.src,
+                }, {
+                    subTitle : "فرایند آنلاین دریافت بار",
+                    icon :require("@/Assets/images/icons-logo/8665303_dolly_cargo_icon 1.png").default.src,
+                }, {
+                    subTitle : "پشتیبانی 24/7",
+                    icon :require("@/Assets/images/icons-logo/8678080_customer_service_fill_support_icon 1.png").default.src,
+                }, {
+                    subTitle : "تخفیف‌های ویژه",
+                    icon :require("@/Assets/images/icons-logo/1564518_bill_discount_notes_icon 1.png").default.src,
+                }, {
+                    subTitle : "صدور بارنامه آنلاین",
+                    icon :require("@/Assets/images/icons-logo/9044577_license_global_icon 1.png").default.src,
+                },
+            ],
         },
        service_target: {
             title: " عملکرد، خدمات و هدف",

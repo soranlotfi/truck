@@ -24,12 +24,22 @@ const driverPageData = {
     applicationSection:{
         title : "دانلود اپلیکیشن رانندگان",
         text:"همکار گرامی با دانلود اپلیکیشن تراک، به عنوان یکی از بهترین ابزارهای کمکی حمل‌ونقل، به سرعت و راحتی به مقصد مطلوب برسید و مزایای فراوانی را تجربه کنید. همواره جهت دانلود اپلیکیشن رانندگان می توانید از مارکت های مختلف استفاده کنید." ,
-       /* downloadLinks:[
+        downloadLinks:[
             {
                 name:"bazar",
-                text:"دانلود تراک از کافه بازار",
-                icon:require()
-            }
-        ]*/
+                text:"دانلود از کافه بازار",
+                icon:require("@/Assets/images/icons-logo/bazar.webp")
+            },{
+                name:"play",
+                text:"دانلود از گوگل پلی ",
+                icon:require("@/Assets/images/icons-logo/googleplay.webp")
+            },{
+                name:"android",
+                text:"دریافت مستقیم نسخه اندروید",
+                icon:require("@/Assets/images/icons-logo/317758_android_google_icon 1.png")
+            },
+        ]
     }
 }
+
+export default driverPageData
