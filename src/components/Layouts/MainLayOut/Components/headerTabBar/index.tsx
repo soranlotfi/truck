@@ -10,7 +10,7 @@ const StyledTab = styled(Tab)(() => {
     return {
         fontWeight: "normal",
         textTransform: "capitalize",
-        fontSize: "1.2rem",
+        fontSize: "1rem",
         fontFamily: "Vazir !important",
         "&.MuiTab-root": {
             color: "white !important",
@@ -26,15 +26,11 @@ const StyledTab = styled(Tab)(() => {
     }
 })
 
-const StyledTabs = styled(Tabs)(() => {
-    return {
-        borderRadius: "0.8rem",
-        "&.MuiTabs-indicator": {
-            backgroundColor: "blue !important",
-            height: "10rem !important",
-        },
-    }
-})
+const StyledTabs = styled(Tabs)({
+    '& .MuiTabs-indicator': {
+        height: '0 !important',
+    },
+});
 
 
 export default function HeaderTabBar() {

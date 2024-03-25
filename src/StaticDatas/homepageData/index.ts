@@ -1,6 +1,12 @@
 const homedata = {
+    headerImages:[
+        require("@/Assets/images/_a60dd74e-f058-49ba-a351-b4eb69a77818.jpg").default.src,
+        require("@/Assets/images/homebanner1.webp").default.src,
+        require("@/Assets/images/homebanner2.webp").default.src,
+    ],
     truckservices: {
-        title: "خدمات پلتفرم آنلاین تراک",
+        title: "خدمات ما",
+        background : require("@/Assets/images/servicesbg.webp").default.src,
         driver: {
             title: "برای رانندگان",
             text: "رانندگان گرامی، با عضویت در مجموعه ما، می‌توانید به صورت آنلاین و بدون واسطه به بارهای مختلف دسترسی پیدا کنید. با امکانات پیشرفته پلتفرم، می‌توانید درخواست‌های حمل و نقل بار را مشاهده و انتخاب کنید، با صاحبان بار در ارتباط باشید و به صورت هوشمند مسیرهای حمل و نقل را برنامه‌ریزی کنید. با انضباط و مهارت خود، به ارتقای صنعت حمل و نقل کمک کنید و با ما به یک تجربه‌ی موفق و به صرفه در حمل بار دست پیدا کنید." ,

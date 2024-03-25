@@ -1,11 +1,11 @@
 import {Grid} from "@mui/material";
 import MTypography from "@/components/MTypographi";
-const backgroundImage = require('@/Assets/images/_a60dd74e-f058-49ba-a351-b4eb69a77818.jpg').default.src;
+const backgroundImage = require('@/Assets/images/driverbanner.webp').default.src;
 
-const HomeBanner = ()=>{
+const Banner = ()=>{
     return(
         <Grid item container justifyContent={"center"} alignItems={"center"} height={"95vh"} sx={{
-            background: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
+            background: `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
             backgroundSize:"cover",
             backgroundPosition:"center",
             backgroundPositionY:"bottom",
@@ -28,4 +28,4 @@ const HomeBanner = ()=>{
     )
 }
 
-export default HomeBanner
+export default Banner

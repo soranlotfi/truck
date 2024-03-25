@@ -1,7 +1,7 @@
 import {setMode, useAppMuiController} from "@/Context/MUI";
 import React, {useEffect} from "react";
 import PageLayOut from "@/components/Layouts/PageLayOut";
-import HomeBanner from "@/pages/home/components/homeBanner";
+import Banner from "@/pages/home/components/banner";
 import Welcome from "@/pages/home/components/welcome";
 import Services from "@/pages/home/components/services";
 import WhyTruck from "@/pages/home/components/whyTruck";
@@ -14,7 +14,7 @@ const AppHomePage = () => {
     }, []);
     return (
         <PageLayOut>
-            <HomeBanner/>
+            <Banner/>
             <Welcome/>
             <Services/>
             <WhyTruck/>

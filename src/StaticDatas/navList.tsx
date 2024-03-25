@@ -29,7 +29,18 @@ export const NavList :NavItem[] = [
         text : "درباره ی ما ",
         path :"/aboutus",
         id:3
+    },{
+        name:"contactus",
+        text : "تماس با ما ",
+        path :"/contactus",
+        id:4
     },
+    /*{
+        name:"contactus",
+        text : "تماس با ما ",
+        path :"/contactus",
+        id:4
+    },*/
 ]
 
 export default NavList
