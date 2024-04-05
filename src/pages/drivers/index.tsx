@@ -1,28 +1,24 @@
 import {Grid} from "@mui/material";
-import Banner from "@/pages/drivers/banner/banner";
+import Banner from "@/pages/drivers/Components/banner/banner";
 import PageLayOut from "@/components/Layouts/PageLayOut";
-import MTypography from "@/components/MTypographi";
-import {homedata} from "@/StaticDatas/homepageData";
-import MDivider from "@/components/MDivider";
 import React from "react";
+import driverPageData from "@/StaticDatas/driversStaticData";
+import WhyDriversChooseTruck from "@/pages/drivers/Components/whyDriversChooseTruck";
+import MTypography from "@/components/MTypographi";
+import Image from "next/image";
+import EndTriditionals from "@/pages/drivers/Components/endTriditionals";
+import EasyBarFinding from "@/pages/drivers/Components/easyBarFinding";
+import AppEducation from "@/pages/drivers/Components/appEducation";
 
 const Drivers = ()=>{
     return(
         <PageLayOut>
             <Grid item container paddingBottom={"30rem"}>
                 <Banner/>
-                <Grid item container p={"2rem 0"}>
-                    <Grid item container>
-                        <Grid item container justifyContent={"center"} rowSpacing={".9rem"}>
-                            <Grid item xs={12} textAlign={"center"}>
-                                <MTypography fontSize={"2rem"} fontWeight={"bold"}>{homedata.truckservices.title}</MTypography>
-                            </Grid>
-                            <Grid item xs={12} textAlign={"center"} container justifyContent={"center"}>
-                                <MDivider height={".3rem"} bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"30%"}/>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
+                <WhyDriversChooseTruck/>
+                <EndTriditionals/>
+                <EasyBarFinding/>
+                <AppEducation/>
             </Grid>
         </PageLayOut>
     )

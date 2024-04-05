@@ -1,10 +1,29 @@
-import {Grid} from "@mui/material";
+import {Grid, styled, useTheme} from "@mui/material";
 import MTypography from "@/components/MTypographi";
 const backgroundImage = require('@/Assets/images/driverbanner.webp').default.src;
 import driverPageData from "@/StaticDatas/driversStaticData";
 import Image from "next/image";
 import Link from "next/link";
+
+
+
 const Banner = ()=>{
+    const theme = useTheme()
+    const DownLoadBox = styled(Grid)(()=> {
+        const {palette} = theme
+        return {
+            backgroundColor: "#fff",
+            transition: "all .3s ease-in-out",
+            padding: "1.5rem 0",
+            boxShadow: ' 0px 0px 21px 3px rgba(0,0,0,0.1)',
+            cursor: "pointer",
+            borderRadius: "1.8rem",
+            '&:hover':{
+                backgroundColor:palette.primary.main,
+                color:palette.primary.contrastText
+            }
+        }
+    })
     const {downloadLinks} = driverPageData.applicationSection
     return(
         <Grid item container justifyContent={"center"} alignItems={"center"} height={"95vh"} sx={{
@@ -20,17 +39,14 @@ const Banner = ()=>{
                    </Grid>
                    <Grid item container justifyContent={"center"} alignItems={"center"} gap={3} flexDirection={"row-reverse"}>
                        {downloadLinks.map((item,index)=>(
-                           <Grid item container xs={3} key={index} bgcolor={"#fff"} justifyContent={"center"} alignItems={"center"} borderRadius={".8rem"} p={"1rem 0"} sx={{boxShadow:' 0px 0px 21px 3px rgba(0,0,0,0.1)'
-                           }}>
-                               <Grid item xs={9}>
-                                   <Link href={"https://www.google.com"} target={"_blank"} style={{textDecoration:"none" , color:"inherit"}}>
-                                       <MTypography fontSize={"1.4rem"} fontWeight={"bold"}>{item.text}</MTypography>
-                                   </Link>
+                           <DownLoadBox item container onClick={()=>window.open("https://www.google.com" , "_blank")}  xs={3} key={index} bgcolor={"#fff"} justifyContent={"center"} alignItems={"center"}>
+                               <Grid item xs={10} textAlign={"center"}>
+                                       <MTypography fontSize={"2rem"} fontWeight={"bold"}>{item.text}</MTypography>
                                </Grid>
                                <Grid item xs={2}>
-                                   <Image src={item.icon} alt={item.text} width={50} height={50}/>
+                                   <Image src={item.icon} alt={item.text} width={60} height={60}/>
                                </Grid>
-                           </Grid>
+                           </DownLoadBox>
                        ))}
                    </Grid>
                </Grid>

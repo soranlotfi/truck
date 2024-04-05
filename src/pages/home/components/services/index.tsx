@@ -65,13 +65,13 @@ const Index = () => {
                           backgroundRepeat: "no-repeat"
                       }}
                 >
-                    <Grid item container position={"relative"} height={"60vh"}>
+                    <Grid item container position={"relative"} height={{xs:"90vh" , xl:"60vh"}}>
                       {/*  cards*/}
                       <Grid item container justifyContent={"space-evenly"} alignItems={"stretch"} position={"absolute"} top={"-10%"} left={0} width={"100%"}>
-                          <Grid itm container xs={4} >
+                          <Grid item container xs={4} >
                               <Card image={truckservices.driver.image} title={truckservices.driver.title} text={truckservices.driver.text} path={"/drivers"}/>
                           </Grid>
-                          <Grid itm container xs={4} >
+                          <Grid item container xs={4} >
                               <Card image={truckservices.owner.image} title={truckservices.owner.title} text={truckservices.owner.text} path={"/owners"}/>
                           </Grid>
                       </Grid>

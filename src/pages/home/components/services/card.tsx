@@ -38,7 +38,7 @@ const Card: React.FC<card> = ({image, title, text, path}) => {
                         {text}
                     </MTypography>
                 </Grid>
-                <Grid item width={"40px"} height={"40px"} sx={{transform:"rotate(45deg)"}} bgcolor={"white"} position={"absolute"} top={"-7%"} right={"70%"}>
+                <Grid item width={"40px"} height={"40px"} sx={{transform:"rotate(45deg)"}} bgcolor={"white"} position={"absolute"} top={"-5%"} right={"70%"}>
 
                 </Grid>
             </Grid>
