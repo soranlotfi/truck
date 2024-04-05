@@ -39,7 +39,7 @@ const Banner = ()=>{
                    </Grid>
                    <Grid item container justifyContent={"center"} alignItems={"center"} gap={3} flexDirection={"row-reverse"}>
                        {downloadLinks.map((item,index)=>(
-                           <DownLoadBox item container onClick={()=>window.open("https://www.google.com" , "_blank")}  xs={3} key={index} bgcolor={"#fff"} justifyContent={"center"} alignItems={"center"}>
+                           <DownLoadBox item container onClick={()=>window.open("https://www.google.com" , "_blank")}  xs={3.5} key={index} bgcolor={"#fff"} justifyContent={"center"} alignItems={"center"}>
                                <Grid item xs={10} textAlign={"center"}>
                                        <MTypography fontSize={"2rem"} fontWeight={"bold"}>{item.text}</MTypography>
                                </Grid>

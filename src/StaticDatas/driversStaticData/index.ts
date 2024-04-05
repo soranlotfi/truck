@@ -81,8 +81,8 @@ const driverPageData = {
     untrustedWorld:{
         title:"در جهانی پر از نامطمئنی، شما به شرکایی نیاز دارید که بتوانند,بیشتر از همیشه خدمات ارائه دهند.",
         text:"در بازار حمل و نقل امروزی، چالش‌هایی بیشتر از پیش وجود دارند. نوسانات نرخ، کمبود راننده، و مسائل عملیاتی نیازمند بازنگری در مدیریت ناوگان هستند. پس چگونه می‌توانید برای موفقیت در این مسیر آماده شوید؟با ارائه بهترین فرصت‌ها برای رانندگانتان، بهره‌وری بیشتر از دارایی‌هایتان را افزایش داده و بهترین قیمت‌ها و خدمات را به مشتریان خود ارائه دهید. تراک بدون تاخیر، کارشناسانی را در اختیارتان می‌گذارد، دیتا و نرم‌افزارهای بصری با شما همراه است تا با قابلیت اطمینان، مسافت‌های خالی را کاهش دهید و عملیات خود را به بهترین حالت بهبود بخشیده و بهینه سازید.",
-        background:require("@/Assets/images/driversSecondBanner.webp").default.src,
-        image:require("@/Assets/images/driversSecondBanner.webp").default.src,
+        background:require("@/Assets/images/untrusted.webp").default.src,
+        image:require("@/Assets/images/untrustedDriver.webp").default.src,
     }
 }
 

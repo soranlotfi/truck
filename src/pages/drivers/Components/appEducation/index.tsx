@@ -5,9 +5,8 @@ import React from "react";
 
 const AppEducation  = ()=>{
     return(
-        <Grid item container>
-            <Grid item container>
-                <Grid item container justifyContent={"center"} rowSpacing={".9rem"} padding={"3rem"}>
+            <Grid item container padding={"3rem 0"}>
+                <Grid item container justifyContent={"center"} rowSpacing={".9rem"} paddingBottom={"3rem"}>
                     <Grid item xs={12} textAlign={"center"} paddingBottom={"1rem"}>
                         <MTypography fontSize={"2rem"} fontWeight={"bold"}>آموزش گام به گام استفاده از اپلیکیشن رانندگان</MTypography>
                     </Grid>
@@ -15,7 +14,7 @@ const AppEducation  = ()=>{
                         <MDivider height={".3rem"} bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"40%"}/>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="center" alignItems="center" style={{ height: '20vh' }}>
+                <Grid container justifyContent="center" alignItems="center" >
                     <Grid item xs={12}>
                         <iframe
                             src="https://www.aparat.com/video/video/embed/videohash/ExBsH/vt/frame"
@@ -31,7 +30,6 @@ const AppEducation  = ()=>{
                     </Grid>
                 </Grid>
             </Grid>
-        </Grid>
     )
 }
 
