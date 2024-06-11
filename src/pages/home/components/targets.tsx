@@ -12,14 +12,14 @@ const Targets = ()=>{
                       backgroundSize:"cover" ,
                       backgroundPosition:"center",
             }}>
-                <Grid item container height={"100%"} justifyContent={"center"} alignItems={"end"}>
-                    <Grid item container xs={11} height={"50%"} alignItems={"cenetr"}>
+                <Grid item container height={"100%"} justifyContent={"center"} alignItems={{xs:"center" , md:"end"}}>
+                    <Grid item container xs={12} md={11} height={"50%"} alignItems={"center"}>
                         <Grid item xs={12}  container alignItems={"center"}>
                             <MTypography fontWeight={"bold"} color={"primary.main"} fontSize={"2rem"}>
                                 {homedata.truckservices.service_target.title}
                             </MTypography>
                         </Grid>
-                        <Grid item xs={8} textAlign={"justify"}>
+                        <Grid item xs={11} md={8} textAlign={"justify"}>
                             <MTypography  color={"primary.contrastText"} fontSize={"1.4rem"}>
                                 {homedata.truckservices.service_target.text}
                             </MTypography>

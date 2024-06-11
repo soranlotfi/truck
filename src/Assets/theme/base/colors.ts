@@ -17,7 +17,7 @@ const colors : PaletteOptions ={
             main: '#AE2434',
             light: '#ff7961',
             dark: '#ba000d',
-            contrastText: '#fff',
+            contrastText: '#c5cacb',
         },
         warning: {
             main: '#ff9800',
@@ -29,7 +29,7 @@ const colors : PaletteOptions ={
             main: '#2196f3',
             light: '#64b5f6',
             dark: '#1976d2',
-            contrastText: '#000',
+            contrastText: '#787878',
         },
         success: {
             main: '#4caf50',

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Welcome = ()=>{
     return(
-        <Grid item container justifyContent={"center"} alignItems={"center"} p={"2rem 0"} position={"relative"}>
+        <Grid item container justifyContent={"center"} alignItems={"center"} p={"2rem 0"} position={"relative"} display={{xs:"none" , md:"flex"}}>
             <Grid item xs={12} textAlign={"center"} p={"4rem 0"}>
                 <Image
                     width={700}

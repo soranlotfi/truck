@@ -5,51 +5,20 @@ import MDivider from "@/components/MDivider";
 import React from "react";
 import Card from "@/pages/home/components/services/card";
 import MButton from "@/components/MButton";
-
-
-const Image = ({src, alt, zIndex}: { src: any, alt: any, zIndex: any }) => (
-    <Box
-        component="img"
-        src={src}
-        alt={alt}
-        sx={{
-            width: "33%",
-            height: "100%",
-            transform: "rotateY(35deg)", // Rotate the image 45 degrees around the Y-axis
-            boxShadow: "-1px 6px 27px 0px rgba(9,121,223,1)", // Apply a shadow
-            marginLeft: "-4rem",
-            zIndex: zIndex,
-            border: "1px solid #0979DF",
-            borderRadius: ".6rem",
-            transition: "all .3s ease-in-out",
-            cursor: "pointer",
-            "&:hover": {
-                transform: "rotateY(0)", // Rotate the image 45 degrees around the Y-axis
-                marginLeft: "-4rem",
-                zIndex: "10",
-                width: "50%",
-                /*
-                                height:"80vh"
-                */
-
-            }
-        }}
-    />
-);
 const Index = () => {
     const {truckservices} = homedata
     return (
         <Grid item container p={"2rem 0"} justifyContent={"center"}>
             {/*truck services title*/}
             <Grid item container justifyContent={"center"} alignItems={"center"} rowSpacing={".9rem"}>
-                <Grid item xs={4} container justifyContent={"end"} alignItems={"center"}>
+                <Grid item xs={3} container justifyContent={"end"} alignItems={"center"}>
                     <MDivider height={".1rem"} bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"}
                               flexItem width={"30%"}/>
                 </Grid>
-                <Grid item p={" 0 1rem"} textAlign={"center"}>
+                <Grid item p={{xs:"2rem 0"}} textAlign={"center"}>
                     <MTypography fontSize={"2rem"} fontWeight={"bold"} color={"primary.main"}>{truckservices.title}</MTypography>
                 </Grid>
-                <Grid item xs={4} container justifyContent={"start"} alignItems={"center"}>
+                <Grid item xs={3} container justifyContent={"start"} alignItems={"center"}>
                     <MDivider height={".1rem"} bgcolor={"primary.main"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"30%"}/>
                 </Grid>
             </Grid>
@@ -57,6 +26,7 @@ const Index = () => {
                 <Grid item
                       container
                       xs={12}
+                      padding={"0 .5rem"}
                       paddingBottom={"6rem"}
                       sx={{
                           background: `url(${truckservices.background})`,
@@ -65,13 +35,13 @@ const Index = () => {
                           backgroundRepeat: "no-repeat"
                       }}
                 >
-                    <Grid item container position={"relative"} height={{xs:"90vh" , xl:"60vh"}}>
+                    <Grid item container position={"relative"} height={{xs:"250vh",sm:"200vh" , xl:"60vh"}}>
                       {/*  cards*/}
-                      <Grid item container justifyContent={"space-evenly"} alignItems={"stretch"} position={"absolute"} top={"-10%"} left={0} width={"100%"}>
-                          <Grid item container xs={4} >
+                      <Grid item container justifyContent={"space-evenly"} alignItems={"stretch"} rowSpacing={5} position={"absolute"} top={"-10%"} left={0} width={"100%"}>
+                          <Grid item container xs={12} sm={10} md={4}>
                               <Card image={truckservices.driver.image} title={truckservices.driver.title} text={truckservices.driver.text} path={"/drivers"}/>
                           </Grid>
-                          <Grid item container xs={4} >
+                          <Grid item container xs={12} sm={10} md={4}>
                               <Card image={truckservices.owner.image} title={truckservices.owner.title} text={truckservices.owner.text} path={"/owners"}/>
                           </Grid>
                       </Grid>
@@ -82,13 +52,13 @@ const Index = () => {
                                 جهت استفاده از خدمات اپلیکیشن ما را دانلود کنید.
                             </MTypography>
                         </Grid>
-                        <Grid item xs={3} height={"12vh"}>
-                            <MButton width={"100%"} height={"100%"} bgcolor={"primary.main"} color={"primary.contrastText"} fontWeight={"bold"} fontSize={"1.2rem"}>
+                        <Grid item xs={10} md={3}>
+                            <MButton padding={"2rem 0"} width={"100%"} height={"100%"} bgcolor={"primary.main"} color={"primary.contrastText"} fontWeight={"bold"} fontSize={"1.2rem"}>
                                 دانلود نسخه رانندگان
                             </MButton>
                         </Grid>
-                        <Grid item xs={3} height={"12vh"}>
-                            <MButton width={"100%"} color={"primary.contrastText"} height={"100%"} bgcolor={"error.main"} fontWeight={"bold"} fontSize={"1.2rem"}>
+                        <Grid item xs={10} md={3} height={"12vh"}>
+                            <MButton padding={"2rem 0"} width={"100%"} color={"primary.contrastText"} height={"100%"} bgcolor={"error.main"} fontWeight={"bold"} fontSize={"1.2rem"}>
                                 دانلود نسخه صاحبان بار
                             </MButton>
                         </Grid>

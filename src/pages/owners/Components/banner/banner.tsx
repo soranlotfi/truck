@@ -42,7 +42,7 @@ const Banner = ()=>{
                 </Grid>
                <Grid item container position={"absolute"} bottom={"-6%"} justifyContent={"center"} alignItems={"center"}>
                    <Grid item xs={12} textAlign={"center"} p={"6rem"}>
-                       <MTypography fontSize={"2.3rem"} banner>دانلود اپلیکیشن نسخه رانندگان</MTypography>
+                       <MTypography fontSize={"2.3rem"} banner>دانلود اپلیکیشن نسخه صاحبان بار</MTypography>
                    </Grid>
                    <Grid item container justifyContent={"center"} alignItems={"center"} gap={3} flexDirection={"row-reverse"}>
                        {downloadLinks.map((item,index)=>(

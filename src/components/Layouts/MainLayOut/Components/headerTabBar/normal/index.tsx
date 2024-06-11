@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import {Tab, Tabs} from '@mui/material'
 import navList from "@/StaticDatas/navList";
 import {setTabBar, useAppMuiController} from "@/Context/MUI";
 import {useRouter} from "next/router";
-import {fontWeight} from "@mui/system";
 
 const StyledTab = styled(Tab)(() => {
     return {
@@ -41,6 +40,14 @@ export default function HeaderTabBar() {
         setTabBar(dispatch, newValue);
     };
 
+    useEffect(() => {
+  let a=  navList.filter((item)=> {
+        if(item.path===Router.pathname){
+            setTabBar(dispatch,item.id)
+        }
+    } )
+    }, []);
+
     return (
         <StyledTabs
             value={value}
@@ -52,9 +59,7 @@ export default function HeaderTabBar() {
                     <StyledTab
                         key={index}
                         label={navItem.text}
-                        /*
-                                                onClick={() => Router.replace(navItem.path)}
-                        */
+                        onClick={() => Router.replace(navItem.path)}
                     />
                 ))}
         </StyledTabs>

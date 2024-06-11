@@ -5,6 +5,7 @@ import MInputRoot from "@/components/MInput/MInputRoot";
 const MInput = forwardRef<HTMLDivElement, IMInput>(
     (
         {
+            advise,
             sx,
             type,
             name,
@@ -34,6 +35,7 @@ const MInput = forwardRef<HTMLDivElement, IMInput>(
                 placeholder={placeholder}
                 fullWidth={fullWidth}
                 costumstats={{
+                    advise,
                     padding,
                     height,
                     border,

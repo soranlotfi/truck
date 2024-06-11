@@ -16,6 +16,7 @@ export interface IMInput {
     label?: string
     form?:boolean
     error?:boolean
+    advise?:boolean
     sx?:SxProps
     onChange?: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement | undefined>
 }
