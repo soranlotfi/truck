@@ -13,10 +13,10 @@ const EndTriditionals =()=>{
                     {title}
                 </MTypography>
             </Grid>
-            <Grid item container justifyContent={"space-evenly"} rowGap={8} padding={"2rem"}>
+            <Grid item container justifyContent={{xs:"center" , md:"space-evenly"}} rowGap={8} padding={{xs:"2rem .5rem" , md:"2rem"}}>
                 {advantages.map((item , index)=>{
                     return(
-                        <Grid item container xs={5}   bgcolor={"secondary.contrastText"} borderRadius={".87rem"} key={index} p={"1rem"} spacing={3}  sx={{boxShadow: "0px 5px 13px 0px rgba(189,189,189,1)"}}>
+                        <Grid item container xs={12} md={5}  bgcolor={"secondary.contrastText"} borderRadius={".87rem"} key={index} p={"1rem"} spacing={3}  sx={{boxShadow: "0px 5px 13px 0px rgba(189,189,189,1)"}}>
                             <Grid item container alignItems={"center"}>
                                 <Grid item xs={3} textAlign={"end"}>
                                     <Image src={item.icon} alt={item.title} width={100} height={100}/>

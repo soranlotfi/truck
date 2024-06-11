@@ -13,8 +13,8 @@ const EasyBarFinding = ()=>{
                       backgroundSize:"cover" ,
                       backgroundPosition:"center",
                   }}>
-                <Grid item container height={"100%"} justifyContent={"center"} alignItems={"end"} p={"4rem 0"}>
-                    <Grid item container xs={11}  alignItems={"start"} height={"30%"}>
+                <Grid item container height={"100%"} justifyContent={"center"} alignItems={{xs:"center" , md:"end"}} p={"4rem 0"}>
+                    <Grid item container xs={11}  alignItems={"start"} height={{xs : "40%" , md:"30%"}}>
                         <Grid item xs={12}  container alignItems={"center"} p={"1rem 0"}>
                             <MTypography fontWeight={"bold"} color={"primary.contrastText"} fontSize={"2.5rem"}>
                                 {easyWayToFindBars.title}

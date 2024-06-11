@@ -22,15 +22,15 @@ const TruckAdvOwner = ()=>{
                     truckAdvforOwners.map((item , index)=>{
                         return(
                             <Grid item container bgcolor={index%2===0?"#f8f8f8" :"white"} flexDirection={index%2!==0 ? "row-reverse" : "row"} key={index}>
-                                <Grid item container xs={7} justifyContent={"start"} padding={"5rem"} rowSpacing={10}>
+                                <Grid item container xs={12} md={7} justifyContent={"start"} padding={{xs:"2rem .5rem" , md:"5rem"}} rowSpacing={10}>
                                     <Grid item xs={12}>
                                         <MTypography fontSize={"1.9rem"} fontWeight={"bold"}>{`${index+1}.${item.title}`}</MTypography>
                                     </Grid>
-                                    <Grid item xs={9} alignSelf={"center"} textAlign={"center"}>
+                                    <Grid item xs={12} md={9} alignSelf={"center"} textAlign={"center"}>
                                         <MTypography fontSize={"1.7rem"}>{item.text}</MTypography>
                                     </Grid>
                                 </Grid>
-                                <Grid item xs={5} container justifyContent={"center"} alignItems={"center"}>
+                                <Grid item xs={12} md={5} container justifyContent={"center"} alignItems={"center"}>
                                     <Image src={item.image} alt={item.title} width={350} height={250}/>
                                 </Grid>
                             </Grid>
