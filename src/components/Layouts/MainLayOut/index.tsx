@@ -24,7 +24,7 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
 {/*
                       the site logo
 */}
-                      <Grid item xs={4} container textAlign={"start"}>
+                    {/*  <Grid item xs={4} container textAlign={"start"}>
                           <Image src={truckLogo} width={250} height={48} alt={truckLogo}/>
                       </Grid>
                       <Grid item xs={8} container display={{xs:"none" , md:"flex"}} justifyContent={{xs:"start" , md:"end"}} alignItems={"end"}>
@@ -32,7 +32,7 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
                       </Grid>
                       <Grid item xs={7} container display={{xs:"flex" , md:"none"}} justifyContent={{xs:"start" , md:"end"}} alignItems={"end"}>
                           <MobileSize/>
-                      </Grid>
+                      </Grid>*/}
                     {/*  <Grid item xs={2} container justifyContent={"center"}>
                          <Grid item xs={4}>
                              <MButton>

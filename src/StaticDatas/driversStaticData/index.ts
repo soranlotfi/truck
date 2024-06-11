@@ -36,7 +36,7 @@ const driverPageData = {
                 icon:require("@/Assets/images/icons-logo/googleplay.webp")
             },{
                 name:"android",
-                text:"دریافت مستقیم نسخه اندروید",
+                text:"دریافت  نسخه اندروید",
                 icon:require("@/Assets/images/icons-logo/317758_android_google_icon 1.png")
             },
         ]
