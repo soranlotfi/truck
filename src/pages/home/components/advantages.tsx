@@ -33,7 +33,7 @@ const Advantages = ()=>{
                                             <MTypography fontSize={"1.6rem"} fontWeight={"bold"}>{card.title}</MTypography>
                                         </Grid>
                                     </Grid>
-                                    <Grid item xs={11} textAlign={"center"}>
+                                    <Grid item xs={12} md={11} textAlign={"justify"}>
                                         <MTypography fontSize={"1.2rem"}>
                                             {card.text}
                                         </MTypography>

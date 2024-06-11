@@ -12,7 +12,7 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
     return(
           <Grid item container justifyContent={"center"}>
               <Grid item container justifyContent={"space-between"} alignItems={"end"} xs={12} md={11} p={"1rem"} position={"absolute"}>
-                 {/* <Grid
+                  <Grid
                       item
                       container
                       justifyContent={"space-between"}
@@ -21,7 +21,9 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
                       borderBottom={"1px solid #fff"}
                       p={"1rem"}
                   >
+{/*
                       the site logo
+*/}
                       <Grid item xs={4} container textAlign={"start"}>
                           <Image src={truckLogo} width={250} height={48} alt={truckLogo}/>
                       </Grid>
@@ -31,7 +33,7 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
                       <Grid item xs={7} container display={{xs:"flex" , md:"none"}} justifyContent={{xs:"start" , md:"end"}} alignItems={"end"}>
                           <MobileSize/>
                       </Grid>
-                      <Grid item xs={2} container justifyContent={"center"}>
+                    {/*  <Grid item xs={2} container justifyContent={"center"}>
                          <Grid item xs={4}>
                              <MButton>
                                  <MTypography>ورود</MTypography>
@@ -42,8 +44,8 @@ const MainLayOut :React.FC<layOut>= ({children})=>{
                                  <MTypography>ثبت نام</MTypography>
                              </MButton>
                          </Grid>
-                      </Grid>
-                  </Grid>*/}
+                      </Grid>*/}
+                  </Grid>
               </Grid>
               <Grid item container>
                   {children}

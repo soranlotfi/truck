@@ -27,7 +27,7 @@ const Index = () => {
                       container
                       xs={12}
                       padding={"0 .5rem"}
-                      paddingBottom={"6rem"}
+                      paddingBottom={"9rem"}
                       sx={{
                           background: `url(${truckservices.background})`,
                           backgroundSize: "cover",
@@ -35,7 +35,7 @@ const Index = () => {
                           backgroundRepeat: "no-repeat"
                       }}
                 >
-                    <Grid item container position={"relative"} height={{xs:"250vh",sm:"200vh" , xl:"60vh"}}>
+                    <Grid item container position={"relative"} padding={{xs: "47rem 0",sm:"37rem 0" , md:"27rem 0" , lg:"20rem 0"}} >
                       {/*  cards*/}
                       <Grid item container justifyContent={"space-evenly"} alignItems={"stretch"} rowSpacing={5} position={"absolute"} top={"-10%"} left={0} width={"100%"}>
                           <Grid item container xs={12} sm={10} md={4}>
@@ -57,7 +57,7 @@ const Index = () => {
                                 دانلود نسخه رانندگان
                             </MButton>
                         </Grid>
-                        <Grid item xs={10} md={3} height={"12vh"}>
+                        <Grid item xs={10} md={3}>
                             <MButton padding={"2rem 0"} width={"100%"} color={"primary.contrastText"} height={"100%"} bgcolor={"error.main"} fontWeight={"bold"} fontSize={"1.2rem"}>
                                 دانلود نسخه صاحبان بار
                             </MButton>

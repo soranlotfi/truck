@@ -26,15 +26,15 @@ const Banner = ()=>{
             backgroundPosition:"center",
             backgroundPositionY:"bottom",
         }}>
-            <Grid item container xs={8} rowSpacing={2} sx={{transform:"translate(0 , 30%)"}}>
+            <Grid item container xs={12} md={8} rowSpacing={2} sx={{transform:"translate(0 , 30%)"}} padding={"0 .5rem"}>
                 <Grid item xs={12} textAlign={"center"} >
-                    <MTypography fontSize={"2.5rem"} banner>نسل جدیدی از شرکت حمل و نقل</MTypography>
+                    <MTypography sx={{fontSize : {xs:"1.9rem" , md:"2.5rem"}}} banner>نسل جدیدی از شرکت حمل و نقل</MTypography>
                 </Grid>
                 <Grid item xs={12} textAlign={"center"} >
-                    <MTypography fontSize={"1.4rem"} banner fontWeight={"normal"}>حمل بار با کمترین هزینه‌ و بهره‌وری بیشتر</MTypography>
+                    <MTypography  sx={{fontSize : {xs:"1.2rem" , md:"1.4rem"}}} banner fontWeight={"normal"}>حمل بار با کمترین هزینه‌ و بهره‌وری بیشتر</MTypography>
                 </Grid>
                 <Grid item xs={12} textAlign={"center"} >
-                    <MTypography banner fontSize={"1.3rem"}> ارتباطی مستقیم و بدون واسطه </MTypography>
+                    <MTypography banner sx={{fontSize : {xs:"1.1rem" , md:"1.25rem"}}}> ارتباطی مستقیم و بدون واسطه </MTypography>
                 </Grid>
                 {/*<Grid item xs={12} textAlign={"center"} >
                     <MTypography banner fontSize={"1.2rem"}>راه حل حمل بار کاملا پایدار </MTypography>

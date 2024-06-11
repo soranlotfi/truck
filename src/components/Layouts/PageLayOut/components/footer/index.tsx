@@ -7,9 +7,9 @@ import Image from "next/image"
 const  truckLogo = require("@/Assets/images/icons-logo/trucklogo.png").default.src
 const Footer = ()=>{
     return(
-        <Grid item container p={"2rem 3rem"} bgcolor={"warning.contrastText"} sx={{borderTopLeftRadius:".8rem" , borderTopRightRadius:".8rem"}}>
+        <Grid item container p={{xs:"2rem .5rem" , md:"2rem 3rem"}} bgcolor={"warning.contrastText"} sx={{borderTopLeftRadius:".8rem" , borderTopRightRadius:".8rem"}}>
             <Grid item  container alignItems={"center"} >
-                <Grid item xs={11}>
+                <Grid item xs={8} sm={10} md={11}>
                     <MDivider height={".1rem"} bgcolor={"primary.contrastText"} varient={"fullWidth"} orientation={"horizontal"} flexItem width={"100%"}/>
                 </Grid>
                 <Grid item xs={1}>
@@ -17,9 +17,8 @@ const Footer = ()=>{
                 </Grid>
             </Grid>
             {/*our contatcs */}
-            <Grid item container justifyContent={"center"} alignItems={"start"}>
-                <Grid item container xs={3}>
-                    <Grid item container>
+            <Grid item container justifyContent={"space-between"} alignItems={"start"} columnSpacing={3}>
+                <Grid item container xs={6} md={3}>
                         <Grid item xs={12} textAlign={"start"} p={"1rem 0"}>
                             <MTypography color={"primary.contrastText"} fontSize={"1.3rem"}>
                                 {footerDate.costumers.title}
@@ -34,10 +33,9 @@ const Footer = ()=>{
                                </Grid>
                            ))}
                        </Grid>
-                    </Grid>
                 </Grid>
                 {/*    links */}
-                    <Grid item container xs={3}>
+                    <Grid item container xs={6} md={3}>
                         <Grid item container>
                             <Grid item xs={12} textAlign={"start"} p={"1rem 0"}>
                                 <MTypography color={"primary.contrastText"} fontSize={"1.3rem"}>
@@ -58,7 +56,7 @@ const Footer = ()=>{
                         </Grid>
                 </Grid>
                 {/*    contaact */}
-                <Grid item container xs={3}>
+                <Grid item container xs={12} md={3}>
                     <Grid item container>
                         <Grid item xs={12} textAlign={"start"} p={"1rem 0"}>
                             <MTypography color={"primary.contrastText"} fontSize={"1.3rem"}>
@@ -76,7 +74,7 @@ const Footer = ()=>{
                                    شماره تماس : {footerDate.contactUs.phoneNumber}
                                </MTypography>
                            </Grid>
-                            <Grid item xs={12} container textAlign={"start"} p={"1rem 0"}>
+                            <Grid item xs={12} container justifyContent={"space-evenly"} p={"1rem 0"}>
                                 {footerDate.contactUs.socialmedias.map((item , index)=>(
                                     <Grid item key={index} xs={3}>
                                         <a href={item.href} target={"_blank"}>
